@@ -14,11 +14,13 @@ export default function HomePage() {
         display="flex"
         justifyContent="space-between"
         alignItems="center"
-        style={{ position: 'fixed', background: 'white', width: '100%' }}>
+        position="fixed"
+        bgcolor="white"
+        width="100%">
         <TopBar />
       </Box>
 
-      <Box paddingTop="6vh"></Box>
+      <Box paddingTop="3.5rem"></Box>
 
       <Box display="flex">
         <Box width="12%">

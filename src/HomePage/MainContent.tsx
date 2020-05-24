@@ -8,7 +8,7 @@ let videos = _.times(20);
 export default function MainContent() {
   return (
     <div>
-      <Box px={12} pt={2} style={{ background: '#f9f9f9' }}>
+      <Box px={12} pt={2}>
         <Grid container spacing={4}>
           {videos.map(item => (
             <Grid item md={3}>

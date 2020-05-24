@@ -3,7 +3,7 @@ import HomePage from './HomePage';
 import { createMuiTheme, ThemeProvider } from '@material-ui/core/styles';
 
 const theme = createMuiTheme({
-  spacing: 4
+  spacing: 4,
 });
 
 function App() {
