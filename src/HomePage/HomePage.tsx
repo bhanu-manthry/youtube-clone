@@ -8,13 +8,21 @@ import SideNav from './SideNav';
 export default function HomePage() {
   return (
     <div>
-      <TopBar />
+      <Box
+        py={1}
+        zIndex="1"
+        display="flex"
+        justifyContent="space-between"
+        alignItems="center"
+        style={{ position: 'fixed', background: 'white', width: '100%' }}>
+        <TopBar />
+      </Box>
 
       <Box paddingTop="6vh"></Box>
 
       <Box display="flex">
         <Box width="12%">
-          <div style={{ position: 'fixed', height: '94vh', width: '12%', background: 'white' }}>
+          <div style={{ position: 'fixed', height: '100vh', width: '12%', background: 'white' }}>
             <SideNav />
           </div>
         </Box>
@@ -23,6 +31,6 @@ export default function HomePage() {
           <MainContent />
         </Box>
       </Box>
-    </div>
+    </div >
   )
 }

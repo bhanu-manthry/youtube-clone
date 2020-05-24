@@ -11,57 +11,49 @@ import {
 
 export default function TopBar() {
   return (
-    <div>
-      <Box
-        zIndex="1"
-        display="flex"
-        justifyContent="space-between"
-        alignItems="center"
-        style={{ height: '6vh', position: 'fixed', background: 'white', width: '100%' }}>
-
-        <Box flex={1}>
-          <Box px={4}>
-            <Grid container spacing={4} alignItems="center">
-              <Grid item>
-                <IconButton>
-                  <Menu />
-                </IconButton>
-              </Grid>
-              <Grid item>
-                <img src={logo} style={{ width: '4rem', height: 'auto' }} />
-              </Grid>
+    <React.Fragment>
+      <Box flex={1}>
+        <Box px={4}>
+          <Grid container spacing={4} alignItems="center">
+            <Grid item>
+              <IconButton>
+                <Menu />
+              </IconButton>
             </Grid>
-          </Box>
-        </Box>
-
-        <Box flex={1}>
-          <TextField placeholder="Search" variant="outlined" size="small" fullWidth />
-        </Box>
-        <Box flex={1}></Box>
-        <Box>
-          <Box px={4}>
-            <Grid container spacing={1} alignItems="center">
-              <Grid item>
-                <IconButton>
-                  <VideoCall />
-                </IconButton>
-              </Grid>
-
-              <Grid item>
-                <IconButton>
-                  <Apps />
-                </IconButton>
-              </Grid>
-
-              <Grid item>
-                <IconButton>
-                  <Notifications />
-                </IconButton>
-              </Grid>
+            <Grid item>
+              <img src={logo} style={{ width: '4rem', height: 'auto' }} />
             </Grid>
-          </Box>
+          </Grid>
         </Box>
       </Box>
-    </div>
+
+      <Box flex={1}>
+        <TextField placeholder="Search" variant="outlined" size="small" fullWidth />
+      </Box>
+      <Box flex={1}></Box>
+      <Box>
+        <Box px={4}>
+          <Grid container spacing={1} alignItems="center">
+            <Grid item>
+              <IconButton>
+                <VideoCall />
+              </IconButton>
+            </Grid>
+
+            <Grid item>
+              <IconButton>
+                <Apps />
+              </IconButton>
+            </Grid>
+
+            <Grid item>
+              <IconButton>
+                <Notifications />
+              </IconButton>
+            </Grid>
+          </Grid>
+        </Box>
+      </Box>
+    </React.Fragment>
   )
 }
